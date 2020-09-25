@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Calculator</title>
+</head>
+<body>
+<form>
+    <h1>Crop Yield Calculator</h1>
+        <p>Crop yield is typically about 50 bushels. 
+            However, amount of rain and potential use offertilizer can vary yields.</p>
+            
+            <section class="rain">
+                 <label for="amount of rain">How Many Inches of Rain Received?</label>
+                     <input type="number" name="rain" id="rain" value="">
+                     <!-- add string here? -->
+            </section>
+<br>
+  <!-- create string using same number of * as inches of rain entered by user -->
+
+        <div class="amount-of-rain"></div>
+        <!-- 20+ in of rain drops bushels by 10% -->
+        <!-- 10in or less drops by 20% -->
+
+
+            <section class="fertilizer">
+                <span>Was Fertilizer Used?</span>
+                <br>
+                    <input type="radio" name="fertilizer-used" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                    <input type="radio" name="fertilizer-not-used" id="no" value="no">
+                        <label for="no">No</label>
+            </section>     
+   
+<br>
+<!-- If yes... only show if yes? -->
+            <section class="fertilizer-type">
+                <label for="fertilizer">What Kind of Fertilzer?</label>
+                    <select name="fertilizer" id="fertilizer">
+                         <option value="regular">Regular</option>
+                         <option value="premium">Premium</option>
+                     </select>
+            </section>
+
+            <br>
+                            <button class="total-yield">Total Bushels Yielded</button>
+            
+
+        <!-- actions as follows:  -->
+                <!-- no change = no change in yield  -->
+                <!-- regular= adding 10% to yield  -->
+                <!-- premium= adding 15% to yield  -->
+                
+ </form> 
+ <script src="script.js" defer></script>  
+</body>
+</html>
